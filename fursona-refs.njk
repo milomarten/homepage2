@@ -3,7 +3,7 @@ pagination:
   data: fursonas
   size: 1
   alias: sona
-permalink: "refs/{{ sona.name | slugify }}.html"
+permalink: "refs/{{ sona.name | slugify }}/index.html"
 ---
 <!doctype html>
 <html>
@@ -14,11 +14,11 @@ permalink: "refs/{{ sona.name | slugify }}.html"
     <meta name="twitter:site" content="@milo_marten">
     <meta name="twitter:creator" content="@milo_marten">
     <meta name="twitter:title" content="{{ sona.name }}'s Ref Sheet">
-    <meta name="twitter:image" content="https://www.dook.zone/ref-images/{{ sona.name | slugify}}.{{ sona.extension }}">
+    <meta name="twitter:image" content="/assets/ref-images/{{ sona.name | slugify}}.{{ sona.extension }}">
 </head>
 <body>
     <style> figcaption { position: absolute; top: 5px; left: 5px; background-color: #a4c059DD; padding: 5px;} </style>
-    <img src="https://www.dook.zone/ref-images/{{ sona.name | slugify}}.{{ sona.extension }}" alt="Ref sheet of {{ sona.name }}, the {{ sona.species }}">
+    <img src="/assets/ref-images/{{ sona.name | slugify}}.{{ sona.extension }}" alt="Ref sheet of {{ sona.name }}, the {{ sona.species }}">
     {% if sona.artist %}
     <figcaption>{{ sona.artist.work }}: {{ sona.artist.name }} (<a href="{{ sona.artist.url | url}}">{{ sona.artist.social }}</a>)</figcaption>
     {% endif %}
