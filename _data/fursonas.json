@@ -1,0 +1,63 @@
+[
+    {
+        "name": "Milo",
+        "species": "Marten",
+        "extension": "jpg",
+        "artist": {
+            "work": "Artist",
+            "name": "LordPulex",
+            "url": "https://twitter.com/LordPulex",
+            "social": "Twitter"
+        }
+    },
+    {
+        "name": "Lucbui",
+        "species": "Swolvy",
+        "extension": "png",
+        "artist": {
+            "work": "Artist",
+            "name": "Orlando Fox",
+            "url": "https://twitter.com/orlando_fox",
+            "social": "Twitter"
+        }
+    },
+    {
+        "name": "Maxwell",
+        "species": "Protogen",
+        "extension": "png",
+        "artist": {
+            "work": "Base",
+            "name": "SukariDragon",
+            "url": "https://www.deviantart.com/sukaridragon",
+            "social": "DeviantArt"
+        }
+    },
+    {
+        "name": "Knox",
+        "species": "Chien-Pao",
+        "extension": "jpg",
+        "artist": {
+            "work": "Artist",
+            "name": "Loveycloud",
+            "url": "https://twitter.com/loveycloud",
+            "social": "Twitter"
+        }
+    },
+    {
+        "name": "Sterling",
+        "species": "Lynx",
+        "extension": "jpg",
+        "artist": {
+            "work": "Artist",
+            "name": "Chowfur",
+            "url": "https://twitter.com/chowfur",
+            "social": "Twitter"
+        }
+    },
+    {
+        "name": "Blaise",
+        "species": "Plane Dragon",
+        "species_url": "https://www.deviantart.com/scpkid/art/Airplane-Dragon-Reference-2019-805587545",
+        "extension": "png"
+    }
+]

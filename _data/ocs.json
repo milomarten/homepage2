@@ -1,0 +1,68 @@
+[
+    {
+        "name": "Lulu",
+        "species": "Floatzel-Thievul",
+        "extension": "png",
+        "artist": {
+            "work": "Artist",
+            "name": "Fawnidae",
+            "url": "https://twitter.com/fawnidae",
+            "social": "Twitter"
+        }
+    },
+    {
+        "name": "Chesapeake",
+        "species": "Beech Marten",
+        "extension": "jpg",
+        "artist": {
+            "work": "Artist",
+            "name": "Loveycloud",
+            "url": "https://twitter.com/loveycloud",
+            "social": "Twitter"
+        }
+    },
+    {
+        "name": "Kirsche",
+        "species": "Amphimorpho",
+        "species_url": "https://amphimorpho.carrd.co/",
+        "extension": "png",
+        "artist": {
+            "work": "Base",
+            "name": "TuxedoDragon",
+            "url": "https://tuxedodragon.art/",
+            "social": "Website"
+        }
+    },
+    {
+        "name": "Gavin",
+        "species": "Jolteon",
+        "extension": "jpg"
+    },
+    {
+        "name": "Denver",
+        "species": "Train Wolf",
+        "extension": "png"
+    },
+    {
+        "name": "Henri",
+        "species": "Stoat",
+        "extension": "jpg",
+        "artist": {
+            "work": "Artist",
+            "name": "Lennguine",
+            "url": "https://twitter.com/lennguine",
+            "social": "Twitter"
+        }
+    },
+    {
+        "name": "Millie",
+        "species": "Furret",
+        "extension": "png",
+        "artist": {
+            "work": "Artist",
+            "name": "Rei",
+            "url": "https://twitter.com/kappanuki",
+            "social": "Twitter"
+        }
+    }
+]

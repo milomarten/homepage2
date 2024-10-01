@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Bluesky",
+        "url": "https://bsky.app/profile/milomarten.bsky.social",
+        "symbol": "bi-cloud-sun"
+    },
+    {
+        "name": "Twitter",
+        "url": "https://twitter.com/milo_marten",
+        "symbol": "bi-twitter"
+    },
+    {
+        "name": "Twitch",
+        "url": "https://www.twitch.tv/milo_marten",
+        "symbol": "bi-twitch"
+    },
+    {
+        "name": "Telegram",
+        "url": "https://t.me/MiloMarten",
+        "symbol": "bi-telegram"
+    },
+    {
+        "name": "Furaffinity",
+        "url": "https://www.furaffinity.net/user/lucbui",
+        "symbol": "bi-brush"
+    },
+    {
+        "name": "Art Fight",
+        "url": "https://artfight.net/~MiloMarten",
+        "symbol": "bi-palette"
+    },
+    {
+        "name": "GitHub",
+        "url": "https://github.com/milomarten/",
+        "symbol": "bi-github"
+    },
+    {
+        "name": "Steam",
+        "url": "https://steamcommunity.com/id/dookdookegg/",
+        "symbol": "bi-steam"
+    }
+]

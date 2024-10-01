@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>dook.zone</title>
+        <link rel="stylesheet" href="assets/styles.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+
+        <meta name="theme-color" content="#a4c059" />
+    </head>
+    <body>
+        <nav class="nav-bar">
+            <ul class="nav-bar-list">
+                {% for social in socials %}
+                <li class="nav-item"><a href="{{ social.url | url }}"><i class="{{ social.symbol }}"></i>{{ social.name }}</a></li>
+                {% endfor %}
+                
+                <li class="nav-item webring">
+                    <a href="https://noodle-r.ing/milomarten/prev" aria-label="Go to previous page in the Amphimorpho web ring"><i class="bi bi-chevron-double-left"></i></a>
+                    <a href="https://noodle-r.ing">Amphimorpho Webring</a>
+                    <a href="https://noodle-r.ing/milomarten/next" aria-label="Go to next page in the Amphimorpho web ring"><i class="bi bi-chevron-double-right"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <div id="points">
+            <section id="fast-facts">
+                <h2>Fast Facts</h2>
+                <ul>
+                    <li class="fact">Name: Milo Marten (AKA Lucbui, Redriders180)</li>
+                    <li class="fact">Age: Old (born in 1993)</li>
+                    <li class="fact">Pronouns: He/Him</li>
+                    <li class="fact">Flags: Aegosexual, Pansexual</li>
+                    <li class="fact">Fursonas:
+                        <ul>
+                            {% for sona in fursonas %}
+                            <li class="species">
+                                {% if sona.species_url %}
+                                {{ sona.name }} the <a href="{{ sona.species_url | url }}">{{ sona.species }}</a> <a class="refsheet" href="refs/{{ sona.name | slugify }}">Reference</a>
+                                {% else %}
+                                {{ sona.name }} the {{ sona.species }} <a class="refsheet" href="refs/{{ sona.name | slugify }}">Reference</a>
+                                {% endif %}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    <li class="fact"><abbr title="Original Character">OC</abbr>s:
+                        <ul>
+                            {% for sona in ocs %}
+                            <li class="species">
+                                {% if sona.species_url %}
+                                {{ sona.name }} the <a href="{{ sona.species_url | url }}">{{ sona.species }}</a> <a class="refsheet" href="refs/{{ sona.name | slugify }}">Reference</a>
+                                {% else %}
+                                {{ sona.name }} the {{ sona.species }} <a class="refsheet" href="refs/{{ sona.name | slugify }}">Reference</a>
+                                {% endif %}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section id="intro">
+                <h2>Howdy!</h2>
+                <p>
+                    The folks call me Milo Marten. I am a software developer based out of the Dallas/Fort Worth area in Texas, USA. I have been
+                    in software dev for about 7 years. I also like LEGO, reading, writing, and drawing. Trains are a particular fascination to me as well, and you'll often find
+                    me bouncing across the countryside in pursuit of a locomotive. You can join my Telegram group, where I post all the videos I take, <a href="https://t.me/Chasing_Trains">here</a>!
+                </p>
+                <p> 
+                    I have been formally a furry since 2018, adopting Lucbui the Swolvy. Since then, I have subsequently adopted my namesake Milo, as well as 
+                    many other characters (check Fast Facts for them all!). I swap between all of these characters at random, because it's fun :)
+                </p>
+                <p>
+                    If you'd like to hang out with me, hit me up at any of my socials in the navbar! You can also find me at Discord, as "milomarten".
+                    I have a Discord server as well, where my best buds can hang out with me!
+                </p>
+            </section>
+            <section id="faq">
+                <h2>FAQ</h2>
+                <h3>Why does redriders180 sound familiar?</h3>
+                <p>
+                    You may have played my Pok&#233;mon fan game, Pok&#233;mon Glazed! Initially released in 2012, and completed in 2015, this marked my foray into programming and changed
+                    my life forever. I have not worked on it in some years, but I enjoy talking about it...although I don't always remember the things I did or how I did them!
+                </p>
+                <h3>What's your deal with eggs?</h3>
+                <p  aria-label="Pictures of three fried eggs"><i class="bi-egg-fill"></i><i class="bi-egg-fill"></i><i class="bi-egg-fried"></i></p>
+            </section>
+        </div>
+        <footer class="footer">
+            <p style="float: left;">Made with <i class="bi-heart-fill" style="color:green;"></i> by Milo Marten</p>
+            <p style="float: right;">Background art made by <a href="https://twitter.com/orcaowlart">OrcaOwl</a> and <a href="https://twitter.com/SpikieAMR">SpikieAMR</a>!</p>
+        </footer>
+    </body>
+</html>
