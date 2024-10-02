@@ -34,5 +34,6 @@ jobs:
       
     - name: Build the Docker image
       run: |
+        docker login --username ${{ secrets.DOCKERHUB_USERNAME }} --password ${{ secrets.DOCKERHUB_TOKEN }}
         docker build . --tag jlamanna/homepage:latest
         docker push jlamanna/homepage:latest
