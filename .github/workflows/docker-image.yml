@@ -1,0 +1,38 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v4.0.4
+    - name: Persist npm cache
+      uses: actions/cache@v3
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
+
+    - name: Persist Eleventy .cache
+      uses: actions/cache@v3
+      with:
+        path: ./.cache
+        key: ${{ runner.os }}-eleventy-fetch-cache
+      
+    - name: Run NPM Install
+      run: npm install
+    - name: Build HTML
+      run: npm run build
+      
+    - name: Build the Docker image
+      run: |
+        docker build . --tag jlamanna/homepage:latest
+        docker push jlamanna/homepage:latest
