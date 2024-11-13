@@ -34,11 +34,14 @@
                         <ul>
                             {% for sona in fursonas %}
                             <li class="species">
+                                {{ sona.name }} the 
                                 {% if sona.species_url %}
-                                {{ sona.name }} the <a href="{{ sona.species_url | url }}">{{ sona.species }}</a> <a class="refsheet" href="refs/{{ sona.name | slugify }}">Reference</a>
+                                <a href="{{ sona.species_url | url }}">{{ sona.species }}</a>
                                 {% else %}
-                                {{ sona.name }} the {{ sona.species }} <a class="refsheet" href="refs/{{ sona.name | slugify }}">Reference</a>
+                                {{ sona.species }}
                                 {% endif %}
+                                <a class="refsheet" href="refs/{{ sona.name | slugify }}">Reference</a>
+                                <a class="refsheet" href="https://bsky.app/hashtag/{{ sona.name | slugify }}?author=milo.dook.zone">Tagged Art</a>
                             </li>
                             {% endfor %}
                         </ul>
