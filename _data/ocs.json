@@ -6,8 +6,8 @@
         "artist": {
             "work": "Artist",
             "name": "Fawnidae",
-            "url": "https://twitter.com/fawnidae",
-            "social": "Twitter"
+            "url": "https://bsky.app/profile/fawnidae.bsky.social",
+            "social": "Bluesky"
         }
     },
     {
@@ -17,8 +17,8 @@
         "artist": {
             "work": "Artist",
             "name": "Loveycloud",
-            "url": "https://twitter.com/loveycloud",
-            "social": "Twitter"
+            "url": "https://bsky.app/profile/loveycloud.bsky.social",
+            "social": "Bluesky"
         }
     },
     {
@@ -50,8 +50,8 @@
         "artist": {
             "work": "Artist",
             "name": "Lennguine",
-            "url": "https://twitter.com/lennguine",
-            "social": "Twitter"
+            "url": "https://bsky.app/profile/lennguine.bsky.social",
+            "social": "Bluesky"
         }
     },
     {
@@ -61,8 +61,8 @@
         "artist": {
             "work": "Artist",
             "name": "Rei",
-            "url": "https://twitter.com/kappanuki",
-            "social": "Twitter"
+            "url": "https://bsky.app/profile/kappanuki.bsky.social",
+            "social": "Bluesky"
         }
     }
 ]
