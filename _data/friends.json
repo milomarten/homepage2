@@ -6,8 +6,13 @@
         "artist": {
             "work": "Artist",
             "name": "Daztoons",
-            "url": "https://twitter.com/daztoons",
-            "social": "Twitter"
+            "url": "https://bsky.app/profile/daztoons.bsky.social",
+            "social": "Bluesky"
         }
+    },
+    {
+        "name": "Bike",
+        "species": "Schwinn Bicycle",
+        "extension": "png"
     }
 ]
