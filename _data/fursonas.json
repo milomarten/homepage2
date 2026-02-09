@@ -11,6 +11,17 @@
         }
     },
     {
+      "name": "Knox",
+      "species": "Chien-Pao",
+      "extension": "jpg",
+      "artist": {
+        "work": "Artist",
+        "name": "Loveycloud",
+        "url": "https://bsky.app/profile/loveycloud.bsky.social",
+        "social": "Bluesky"
+      }
+    },
+    {
         "name": "Lucbui",
         "species": "Swolvy",
         "extension": "png",
@@ -22,6 +33,17 @@
         }
     },
     {
+      "name": "Duncan",
+      "species": "Maned Coyote",
+      "extension": "jpg",
+      "artist": {
+        "work": "Artist",
+        "name": "Yote",
+        "url": "https://bsky.app/profile/yotecoyote.art",
+        "social": "Bluesky"
+      }
+    },
+    {
         "name": "Maxwell",
         "species": "Protogen",
         "extension": "png",
@@ -30,17 +52,6 @@
             "name": "SukariDragon",
             "url": "https://www.deviantart.com/sukaridragon",
             "social": "DeviantArt"
-        }
-    },
-    {
-        "name": "Knox",
-        "species": "Chien-Pao",
-        "extension": "jpg",
-        "artist": {
-            "work": "Artist",
-            "name": "Loveycloud",
-            "url": "https://bsky.app/profile/loveycloud.bsky.social",
-            "social": "Bluesky"
         }
     },
     {
