@@ -5,9 +5,21 @@
         "symbol": "bi-cloud-sun"
     },
     {
-        "name": "Twitter",
-        "url": "https://twitter.com/milo_marten",
-        "symbol": "bi-twitter"
+        "name": "AD Bluesky",
+        "url": "https://bsky.app/profile/milos-paws.dook.zone",
+        "symbol": "bi-cloud-sun",
+        "nsfw": true
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/milo_marten",
+      "symbol": "bi-twitter"
+    },
+    {
+      "name": "AD Twitter",
+      "url": "https://twitter.com/PentUpMarten",
+      "symbol": "bi-twitter",
+      "nsfw": true
     },
     {
         "name": "Twitch",

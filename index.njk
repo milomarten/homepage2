@@ -12,7 +12,11 @@
         <nav class="nav-bar">
             <ul class="nav-bar-list">
                 {% for social in socials %}
-                <li class="nav-item"><a href="{{ social.url | url }}"><i class="{{ social.symbol }}"></i>{{ social.name }}</a></li>
+                	{% if social.nsfw %}
+                		<li class="nsfw nav-item" hidden><a href="{{ social.url | url }}"><i class="{{ social.symbol }}"></i>{{ social.name }}</a></li>
+                	{% else %}
+						<li class="nav-item"><a href="{{ social.url | url }}"><i class="{{ social.symbol }}"></i>{{ social.name }}</a></li>
+                	{% endif %}
                 {% endfor %}
                 
                 <li class="nav-item webring">
@@ -92,5 +96,14 @@
             <p style="float: left;">Made with <i class="bi-heart-fill" style="color:green;"></i> by Milo Marten</p>
             <p style="float: right;">Background art made by <a href="https://twitter.com/orcaowlart">OrcaOwl</a> and <a href="https://twitter.com/SpikieAMR">SpikieAMR</a>!</p>
         </footer>
+        <script>
+        	if (window.location.hash === "#nsfw") {
+        		const elems = document.getElementsByClassName('nsfw');
+        		Array.prototype.forEach.call(
+        			elems,
+        			(elem) => elem.removeAttribute('hidden')
+        		);
+        	}
+        </script>
     </body>
 </html>
