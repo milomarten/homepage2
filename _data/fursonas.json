@@ -8,7 +8,18 @@
             "name": "LordPulex",
             "url": "https://bsky.app/profile/pulex.bsky.social",
             "social": "Bluesky"
-        }
+        },
+        "additionalLinks": [
+            {
+              "label": "Stickers",
+              "url": "https://t.me/addstickers/MiloMarten"
+            },
+            {
+              "label": "NSFW Stickers",
+              "url": "https://t.me/addstickers/MiloMartenKinks",
+              "nsfw": true
+            }
+        ]
     },
     {
       "name": "Knox",
@@ -19,7 +30,13 @@
         "name": "Loveycloud",
         "url": "https://bsky.app/profile/loveycloud.bsky.social",
         "social": "Bluesky"
-      }
+      },
+      "additionalLinks": [
+          {
+            "label": "Stickers",
+            "url": "https://t.me/addstickers/KnoxChienPao"
+          }
+      ]
     },
     {
         "name": "Lucbui",
@@ -30,7 +47,13 @@
             "name": "Orlando Fox",
             "url": "https://bsky.app/profile/orlandofox.bsky.social",
             "social": "Bluesky"
-        }
+        },
+        "additionalLinks": [
+            {
+              "label": "Stickers",
+              "url": "https://t.me/addstickers/lucbui"
+            }
+        ]
     },
     {
       "name": "Duncan",
@@ -52,7 +75,13 @@
             "name": "SukariDragon",
             "url": "https://www.deviantart.com/sukaridragon",
             "social": "DeviantArt"
-        }
+        },
+        "additionalLinks": [
+            {
+              "label": "Stickers",
+              "url": "https://t.me/addstickers/maxwell_protogen"
+            }
+        ]
     },
     {
         "name": "Sterling",

@@ -48,6 +48,13 @@
                                 {% endif %}
                                 <a class="refsheet" href="refs/{{ sona.name | slugify }}">Reference</a>
                                 <a class="refsheet" href="https://bsky.app/hashtag/{{ sona.name | slugify }}?author=milo.dook.zone">Tagged Art</a>
+                                {% for link in sona.additionalLinks %}
+                                {% if link.nsfw %}
+                                <a class="nsfw refsheet" href="{{ link.url }}" hidden>{{ link.label }}</a>
+                                {% else %}
+                                <a class="refsheet" href="{{ link.url }}">{{ link.label }}</a>
+                                {% endif %}
+                                {% endfor %}
                             </li>
                             {% endfor %}
                         </ul>
