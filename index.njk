@@ -2,9 +2,9 @@
 <html>
     <head>
         <title>dook.zone</title>
-        <link rel="stylesheet" href="assets/styles.css" />
+        <link rel="stylesheet" href="/assets/styles.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-        <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
 
         <meta name="theme-color" content="#a4c059" />
     </head>
@@ -20,12 +20,6 @@
 						<li class="nav-item"><a href="{{ social.url | url }}"><i class="{{ social.symbol }}"></i>{{ social.name }}</a></li>
                 	{% endif %}
                 {% endfor %}
-                
-                <li class="nav-item webring">
-                    <a href="https://noodle-r.ing/milomarten/prev" aria-label="Go to previous page in the Amphimorpho web ring"><i class="bi bi-chevron-double-left"></i></a>
-                    <a href="https://noodle-r.ing">Amphimorpho Webring</a>
-                    <a href="https://noodle-r.ing/milomarten/next" aria-label="Go to next page in the Amphimorpho web ring"><i class="bi bi-chevron-double-right"></i></a>
-                </li>
             </ul>
         </nav>
         <div id="points">
@@ -103,6 +97,16 @@
         </div>
         <footer class="footer">
             <p style="float: left;">Made with <i class="bi-heart-fill" style="color:green;"></i> by Milo Marten</p>
+            <div class="webring">
+				<a href="https://noodle-r.ing/milomarten/prev" aria-label="Go to previous page in the Amphimorpho web ring"><i class="bi bi-chevron-double-left"></i></a>
+				<a href="https://noodle-r.ing">Amphimorpho Webring</a>
+				<a href="https://noodle-r.ing/milomarten/next" aria-label="Go to next page in the Amphimorpho web ring"><i class="bi bi-chevron-double-right"></i></a>
+			</div>
+            <div class="webring">
+				<a href="https://www.dook.zone/ring/milo/prev" aria-label="Go to previous page in the Dook Zone web ring"><i class="bi bi-chevron-double-left"></i></a>
+				<a href="https://www.dook.zone/ring">Dook Zone Webring</a>
+				<a href="https://www.dook.zone/ring/milo/next" aria-label="Go to next page in the Dook Zone web ring"><i class="bi bi-chevron-double-right"></i></a>
+			</div>
             <p style="float: right;">Background art made by <a href="https://twitter.com/orcaowlart">OrcaOwl</a> and <a href="https://twitter.com/SpikieAMR">SpikieAMR</a>!</p>
         </footer>
         <script>

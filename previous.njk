@@ -1,0 +1,24 @@
+---
+pagination:
+  data: ring
+  size: 1
+permalink: "/ring/{{ pagination.items[0].id }}/previous.html"
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Redirecting to next ring...</title>
+		{% if pagination.page.previous %}
+        	<meta http-equiv="refresh" content="0; url={{ pagination.page.previous.url }}">
+        {% else %}
+        	<meta http-equiv="refresh" content="0; url={{ pagination.page.last.url }}">
+        {% endif %}
+	</head>
+	<body>
+		{% if pagination.page.previous %}
+			<p>Redirecting to <a href="{{ pagination.page.previous.url }}">{{ pagination.page.previous.name }}</a></p>
+		{% else %}
+			<p>Redirecting to <a href="{{ pagination.page.last.url }}">{{ pagination.page.last.name }}</a></p>
+		{% endif %}
+	</body>
+</html>
