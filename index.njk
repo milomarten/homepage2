@@ -12,7 +12,7 @@
 	<a class="refsheet" href="https://bsky.app/hashtag/{{ sona.name | slugify }}?author=milo.dook.zone">Tagged Art</a>
 	{% for link in sona.additionalLinks %}
 		{% if link.nsfw %}
-			<a class="nsfw refsheet" href="{{ link.url }}" hidden>{{ link.label }}</a>
+			<a class="nsfw refsheet" href="{{ link.url }}">{{ link.label }}</a>
 		{% else %}
 			<a class="refsheet" href="{{ link.url }}">{{ link.label }}</a>
 		{% endif %}
@@ -74,13 +74,4 @@
 			<p  aria-label="Pictures of three fried eggs"><i class="bi-egg-fill"></i><i class="bi-egg-fill"></i><i class="bi-egg-fried"></i></p>
 		</section>
 	</div>
-	<script>
-		if (window.location.hash === "#nsfw") {
-			const elems = document.getElementsByClassName('nsfw');
-			Array.prototype.forEach.call(
-				elems,
-				(elem) => elem.removeAttribute('hidden')
-			);
-		}
-	</script>
 {% endblock %}

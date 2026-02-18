@@ -121,5 +121,9 @@ section {
 }
 
 [hidden] {
-	display: none !important;
+	display: none !important
+}
+
+.nsfw {
+	display: none !important
 }

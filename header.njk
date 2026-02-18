@@ -2,7 +2,7 @@
 	<ul class="nav-bar-list">
 		{% for social in socials %}
 			{% if social.nsfw %}
-				<li class="nsfw nav-item" hidden><a href="{{ social.url | url }}"><i class="{{ social.symbol }}"></i>{{ social.name }}</a></li>
+				<li class="nsfw nav-item"><a href="{{ social.url | url }}"><i class="{{ social.symbol }}"></i>{{ social.name }}</a></li>
 			{% else %}
 				<li class="nav-item"><a href="{{ social.url | url }}"><i class="{{ social.symbol }}"></i>{{ social.name }}</a></li>
 			{% endif %}

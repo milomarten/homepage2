@@ -7,6 +7,20 @@
         <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
 
         <meta name="theme-color" content="#a4c059" />
+
+        <script>
+			window.addEventListener("load", (event) => {
+				if (window.location.hash === "#nsfw") {
+					const elems = document.getElementsByClassName('nsfw');
+					Array.prototype.forEach.call(
+						elems,
+						(elem) => {
+							elem.classList.remove('nsfw');
+						}
+					);
+				}
+			});
+        </script>
     </head>
     <body>
     	{% include "header.njk" %}
