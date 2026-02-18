@@ -12,12 +12,10 @@
 			window.addEventListener("load", (event) => {
 				if (window.location.hash === "#nsfw") {
 					const elems = document.getElementsByClassName('nsfw');
-					Array.prototype.forEach.call(
-						elems,
-						(elem) => {
-							elem.classList.remove('nsfw');
-						}
-					);
+					while (elems.length) {
+						elems[0].classList.add('nsfw-tagged');
+						elems[0].classList.remove('nsfw');
+					}
 				}
 			});
         </script>
