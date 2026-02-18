@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{% block title %}dook.zone{% endblock %}</title>
+        <link rel="stylesheet" href="/assets/styles.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
+
+        <meta name="theme-color" content="#a4c059" />
+    </head>
+    <body>
+    	{% include "header.njk" %}
+    	{% block body %}
+    	{% endblock %}
+    	{% include "footer.html" %}
+    </body>
+</html>

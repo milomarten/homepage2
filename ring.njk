@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Dook Ring</title>
-		<link rel="stylesheet" href="/assets/styles.css" />
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-		<link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
+{% extends "basepage.njk" %}
 
-		<meta name="theme-color" content="#a4c059" />
-	</head>
-<body>
+{% block title %} Dook Ring {% endblock %}
+{% block body %}
 	<h1>The Dook Ring</h1>
 	<div id="points">
 		<section id="fast-facts">
@@ -22,22 +15,7 @@
 		<section id="intro">
 			<p>All of my friends live here! You can step through the ring using widget available at each website. Or you
 			can return here, and go immediately to whichever you'd like!</p>
-			<p>Are you a friend with a website and want to join? Hit me up and we'll add you!</p>
+			<p>Are you a friend with a website and want to join? Hit me up on socials and I'll add you!</p>
 		</section>
 	</div>
-	<footer class="footer">
-		<p style="float: left;">Made with <i class="bi-heart-fill" style="color:green;"></i> by Milo Marten</p>
-		<div class="webring">
-			<a href="https://noodle-r.ing/milomarten/prev" aria-label="Go to previous page in the Amphimorpho web ring"><i class="bi bi-chevron-double-left"></i></a>
-			<a href="https://noodle-r.ing">Amphimorpho Webring</a>
-			<a href="https://noodle-r.ing/milomarten/next" aria-label="Go to next page in the Amphimorpho web ring"><i class="bi bi-chevron-double-right"></i></a>
-		</div>
-		<div class="webring">
-			<a href="https://www.dook.zone/ring/milo/previous" aria-label="Go to previous page in the Dook Zone web ring"><i class="bi bi-chevron-double-left"></i></a>
-			<a href="https://www.dook.zone/ring">Dook Zone Webring</a>
-			<a href="https://www.dook.zone/ring/milo/next" aria-label="Go to next page in the Dook Zone web ring"><i class="bi bi-chevron-double-right"></i></a>
-		</div>
-		<p style="float: right;">Background art made by <a href="https://twitter.com/orcaowlart">OrcaOwl</a> and <a href="https://twitter.com/SpikieAMR">SpikieAMR</a>!</p>
-	</footer>
-</body>
-</html
+{% endblock %}
