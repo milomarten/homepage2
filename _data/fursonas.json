@@ -2,7 +2,6 @@
     {
         "name": "Milo",
         "species": "Marten",
-        "customRefLink": "https://crimzin.red/refs/milo",
         "extension": "jpg",
         "artist": {
             "work": "Artist",
