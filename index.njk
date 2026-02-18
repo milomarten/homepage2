@@ -40,7 +40,11 @@
                                 {% else %}
                                 {{ sona.species }}
                                 {% endif %}
+                                {% if sona.customRefLink %}
+                                <a class="refsheet" href="{{ sona.customRefLink }}">Reference</a>
+                                {% else %}
                                 <a class="refsheet" href="refs/{{ sona.name | slugify }}">Reference</a>
+                                {% endif %}
                                 <a class="refsheet" href="https://bsky.app/hashtag/{{ sona.name | slugify }}?author=milo.dook.zone">Tagged Art</a>
                                 {% for link in sona.additionalLinks %}
                                 {% if link.nsfw %}
