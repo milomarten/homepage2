@@ -14,5 +14,16 @@
         "name": "Bike",
         "species": "Schwinn Bicycle",
         "extension": "png"
+    },
+    {
+        "name": "Crimzin",
+        "species": "Dragon",
+        "extension": "png",
+        "artist": {
+            "work": "Artist",
+            "name": "YeenBeanz",
+            "url":"https://bsky.app/profile/astropup11.bsky.social",
+            "social": "Bluesky"
+        }
     }
 ]
