@@ -98,6 +98,12 @@
         "name": "Blaise",
         "species": "Plane Dragon",
         "species_url": "https://www.deviantart.com/scpkid/art/Airplane-Dragon-Reference-2019-805587545",
-        "extension": "png"
+        "extension": "png",
+        "artist": {
+            "work": "Artist",
+            "name": "Tuxedo Dragon",
+            "url": "https://bsky.app/profile/tuxedodragon.bsky.social",
+            "social": "Bluesky"
+        }
     }
 ]
