@@ -9,14 +9,16 @@
         <meta name="theme-color" content="#a4c059" />
 
         <script>
-			window.addEventListener("load", (event) => {
-				if (window.location.hash === "#nsfw") {
-					const elems = document.getElementsByClassName('nsfw');
-					while (elems.length) {
-						elems[0].classList.add('nsfw-tagged');
-						elems[0].classList.remove('nsfw');
-					}
-				}
+			["load", "hashchange"].forEach(evt => {
+			    window.addEventListener(evt, (event) => {
+                    if (window.location.hash === "#nsfw") {
+                        const elems = document.getElementsByClassName('nsfw');
+                        while (elems.length) {
+                            elems[0].classList.add('nsfw-tagged');
+                            elems[0].classList.remove('nsfw');
+                        }
+                    }
+                });
 			});
         </script>
     </head>
