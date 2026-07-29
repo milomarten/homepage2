@@ -2,24 +2,13 @@
     {
         "name": "Bluesky",
         "url": "https://bsky.app/profile/milo.dook.zone",
-        "symbol": "bi-cloud-sun"
+        "symbol": "bi-bluesky"
     },
     {
         "name": "AD Bluesky",
         "url": "https://bsky.app/profile/milos-paws.dook.zone",
-        "symbol": "bi-cloud-sun",
+        "symbol": "bi-bluesky",
         "nsfw": true
-    },
-    {
-      "name": "Twitter",
-      "url": "https://twitter.com/milo_marten",
-      "symbol": "bi-twitter"
-    },
-    {
-      "name": "AD Twitter",
-      "url": "https://twitter.com/PentUpMarten",
-      "symbol": "bi-twitter",
-      "nsfw": true
     },
     {
         "name": "Twitch",
@@ -50,5 +39,10 @@
         "name": "Steam",
         "url": "https://steamcommunity.com/id/dookdookegg/",
         "symbol": "bi-steam"
+    },
+    {
+        "name": "Books",
+        "url": "https://book.dook.zone",
+        "symbol": "bi-book"
     }
 ]
