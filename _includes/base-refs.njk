@@ -14,14 +14,48 @@ permalink: "refs/{{ sona.name | slugify }}.html"
     <meta name="twitter:creator" content="@milo_marten">
     <meta name="twitter:title" content="{{ sona.name }}'s Ref Sheet">
     <meta name="twitter:image" content="/assets/ref-images/{{ sona.name | slugify}}.{{ sona.extension }}">
+
+    <script>
+        window.addEventListener("load", (event) => {
+            if ("wakeLock" in navigator) {
+                let wakeLock = null;
+                let checkboxElement = document.getElementById("wake-mode");
+
+                checkboxElement.addEventListener("change", async () => {
+                    if (checkboxElement.checked && !wakeLock) {
+                        try {
+                            wakeLock = await navigator.wakeLock.request("screen");
+                            wakeLock.addEventListener("release", () => {
+                                checkboxElement.checked = false;
+                                wakeLock = null;
+                            });
+                        } catch (err) {
+                            console.error("Unable to secure wake lock", err);
+                        }
+                    } else if (wakeLock) {
+                        await wakeLock.release();
+                    }
+                });
+            } else {
+                document.getElementById("wake-mode-container").remove();
+            }
+        });
+    </script>
 </head>
 <body>
-    <style> figcaption { position: absolute; top: 5px; left: 5px; background-color: #a4c059DD; padding: 5px;} </style>
+    <style> 
+        figcaption { position: absolute; top: 5px; left: 5px; background-color: #a4c059DD; padding: 5px;} 
+        .wake-mode { position: absolute; top: 5px; right: 5px; background-color: #a4c059DD; padding: 5px;}
+    </style>
     <figure>
         <img src="/assets/ref-images/{{ sona.name | slugify}}.{{ sona.extension }}" alt="Ref sheet of {{ sona.name }}, the {{ sona.species }}" style="width: 100%">
         {% if sona.artist %}
         <figcaption>{{ sona.artist.work }}: {{ sona.artist.name }} (<a href="{{ sona.artist.url | url}}">{{ sona.artist.social }}</a>)</figcaption>
         {% endif %}
     </figure>
+    <div class="wake-mode" id="wake-mode-container">
+        <input type="checkbox" id="wake-mode" autocomplete="off" switch>
+        <label for="wake-mode">Wake Mode</label>
+    </div>
 </body>
 </html>
